@@ -1,0 +1,44 @@
+Question: You have been tasked with reviewing and updating this program. What steps would you take to identify any issues in the code?
+
+Your Response:
+I would review all variable declarations and compare them to the variables used throughout the program to ensure consistent spelling and usage. Next, I would trace the program line by line to verify that all input statements, calculations, and outut statements are correct. I would test the program using sample data to ensure the loop and decision structures function as intended. Finally, I would correct any errors found and retest the program.
+
+Question: What actions could the developer have taken to minimize the number of errors?
+
+Your Response:
+The developer could have minimized errors by following consistent naming conventions, testing the program during development, reviewing the logic before implementation, and performing code reviews. Creating a testing plan and using sample data would have helped identify errors earlier.
+
+Debbugging Exercise:
+
+// This pseudocode is intended to determine whether students have
+// passed or failed a course; student needs to average 60 or
+// more on two tests. 
+
+start
+   Declarations
+      num firstTest
+      num secondTest
+      num average
+      num PASSING = 60
+  
+output "Enter first score or 0 to quit "
+  input firstTest 
+
+while firstTest <> to 0
+      output "Enter second score "
+      input secondTest
+      
+  average = (firstTest + secondTest) / 2
+    
+  output "Average is ", average
+     
+  if average >= PASSING then
+         output "Pass"
+      else
+         output "Fail"
+      endif
+      
+   output "Enter first score or 0 to quit "
+  input firstTest
+ endwhile
+stop
